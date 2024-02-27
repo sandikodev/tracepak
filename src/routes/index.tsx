@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
+import { Link, type DocumentHead } from "@builder.io/qwik-city";
 
 export default component$(() => {
   return (
@@ -10,11 +10,11 @@ export default component$(() => {
             <h3 class="font-bold">Tracepak</h3>
           </div>
         </a>
-        <a href="mailto:androxoss@hotmail.com" data-splitbee-event="Say Hello">
+        <Link href="/register">
           <button class="rounded-full bg-gray-200 px-8 py-3 text-sm font-semibold text-gray-800 transition-all  hover:bg-gray-300 focus:bg-gray-400">
             Mulai Bisnis
           </button>
-        </a>
+        </Link>
       </header>
       <section class="mb-4 flex flex-1 flex-col justify-between gap-10 px-5">
         <div class="mt-24">
@@ -24,7 +24,8 @@ export default component$(() => {
           </p>
         </div>
         <a
-          href="/project"
+          href="mailto:androxoss@hotmail.com"
+          data-splitbee-event="Say Hello"
           class="mb-24 flex w-full scale-100 flex-col items-center justify-around space-y-10 rounded-xl bg-indigo-600 p-10 transition-transform md:flex-row md:space-y-0 md:hover:-skew-x-3 md:hover:scale-105"
         >
           <div class="flex flex-col space-y-2">
